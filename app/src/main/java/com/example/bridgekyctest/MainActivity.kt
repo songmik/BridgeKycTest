@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        mWebView.addJavascriptInterface(BridgeActivity(), "AndroidBridge")
+        mWebView.addJavascriptInterface(BridgeActivity(this), "AndroidBridge")
         mWebView.loadUrl("https://kyc-dev.rootone.com/")
 
 

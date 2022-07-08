@@ -7,7 +7,6 @@ import retrofit2.http.POST
 
 interface Service {
 
-
     @FormUrlEncoded
     @POST("/kyc/insert/")
     fun getData() : Call<ApiResponse>
